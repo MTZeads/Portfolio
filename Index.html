@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Portfolio | Sébastien Hodgson</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/site.css" rel="stylesheet">
+	<!-- animsition CSS -->
+	<link rel="stylesheet" href="./css/animsition.min.css">
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,8 +19,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-  
+  <body class="animsition">
+  <!-- class="animsition" data-animsition-in-class="zoom-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="800" -->
   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
@@ -38,11 +40,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href="index.html#jumbotron">ACCEUIL <span class="sr-only">(current)</span></a></li>
-			<li><a href="index.html#cheminement">CHEMINEMENT</a></li>
-			<li><a href="index.html#competences">COMPÉTENCES</a></li>
-			<li><a href="index.html#realisations">RÉALISATIONS</a></li>			
-			<li><a href="index.html#contact">CONTACT</a></li>	
+			<li class="active"><a href="index.html#jumbotron" class="animsition-link">ACCEUIL <span class="sr-only">(current)</span></a></li>
+			<li><a href="index.html#cheminement" class="animsition-link">CHEMINEMENT</a></li>
+			<li><a href="index.html#competences" class="animsition-link">COMPÉTENCES</a></li>
+			<li><a href="index.html#realisations" class="animsition-link">RÉALISATIONS</a></li>			
+			<li><a href="index.html#contact" class="animsition-link">CONTACT</a></li>	
 		  </ul>  
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -62,19 +64,19 @@
 	
 	<div id="cheminement">
       <div class="container">
-        
+        <h2>Cheminement</h2>
       </div>
     </div>
 	
 	<div id="competences">
       <div class="container">
-        
+        <h2>Compétences</h2>
       </div>
     </div>
 	
 	<div id="realisations">
       <div class="container">
-        
+        <h2>Mes réalisations</h2>
       </div>
     </div>
 	
@@ -93,9 +95,35 @@
     </div>
 	
 </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<!-- animsition js -->
+	<script src="js/jquery.animsition.min.js"></script>
+	<!-- Copyright (c) 2014 Jack Rugile -->
+	<script src="js/placeholdem.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {  
+		Placeholdem( document.querySelectorAll( '[placeholder]' ) );	
+	    $(".animsition-link").animsition({	  
+			inClass               :   'fade-in-right-sm',
+			inDuration            :    1200,
+			unSupportCss          : [ 'animation-duration',
+									  '-webkit-animation-duration',
+									  '-o-animation-duration'
+									]
+	  });
+	  
+	  $(".animsition").animsition({	  
+			inClass               :   'fade-in-left-sm',
+			inDuration            :    1000,
+			unSupportCss          : [ 'animation-duration',
+									  '-webkit-animation-duration',
+									  '-o-animation-duration'
+									]			
+	  });
+	}); 
+		
+	</script>
   </body>
 </html>
