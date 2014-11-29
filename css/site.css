@@ -1,0 +1,26 @@
+#contact > div {
+	width:500px;
+	margin: 0 auto;
+}
+
+#contact > div > h2 {
+	text-align: center;
+	padding-bottom: 20px;	
+}
+
+textarea {
+   resize: none;
+   margin-top:5px;
+}
+
+#btnSendEmail {
+	margin-top:5px;
+	width:100%;
+	background-color:#eee;
+	border-radius:0px;
+}
+
+#txtSubject {
+	margin-top:5px;
+}
+

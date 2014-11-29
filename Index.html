@@ -31,28 +31,67 @@
 			<span class="icon-bar"></span>
 		  </button>
 		  <a class="navbar-brand" href="#">
-			<img alt="#" src="img/brand.png" onload="this.width/=2;this.onload=null;">
+			<img alt="#" src="img/brand.png" href="index.html" onload="this.width/=2;this.onload=null;">
 		  </a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">Acceuil <span class="sr-only">(current)</span></a></li>
-			<li><a href="#">Cheminement</a></li>
-			<li><a href="#">Réalisation</a></li>			
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="index.html#jumbotron">ACCEUIL <span class="sr-only">(current)</span></a></li>
+			<li><a href="index.html#cheminement">CHEMINEMENT</a></li>
+			<li><a href="index.html#competences">COMPÉTENCES</a></li>
+			<li><a href="index.html#realisations">RÉALISATIONS</a></li>			
+			<li><a href="index.html#contact">CONTACT</a></li>	
 		  </ul>  
 		</div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 	</div>
-	<div class="jumbotron">
-    <div class="bs-docs-header" id="content">
+	
+	<!-- JUMBOTRON -->
+	
+	<div id="jumbotron" class="jumbotron">
       <div class="container">
-        <h1>Lorem ipsum</h1>
+        <h1>Bienvenue !</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>        
       </div>
     </div>
+	
+	<!-- CHEMINEMENT -->
+	
+	<div id="cheminement">
+      <div class="container">
+        
+      </div>
+    </div>
+	
+	<div id="competences">
+      <div class="container">
+        
+      </div>
+    </div>
+	
+	<div id="realisations">
+      <div class="container">
+        
+      </div>
+    </div>
+	
+	<div id="contact">
+      <div class="container">
+		<h2>Me contacter</h2>
+	  
+        <div class="input-group">
+		  <span class="input-group-addon">@</span>
+		  <input id="txtEmail" type="text" class="form-control" placeholder="Email">		 
+		</div>		   
+		  <input id="txtSubject" type="text" class="form-control" placeholder="Sujet">		  
+		  <textarea id="txtMessage" class="form-control" rows="5" placeholder="Message"></textarea>
+		  <button id="btnSendEmail" type="button" class="btn btn-default">Envoyer</button>
+      </div>
+    </div>
+	
 </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
