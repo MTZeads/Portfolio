@@ -1,6 +1,64 @@
-#contact > div {
-	width:500px;
+#contact > div {	
 	margin: 0 auto;
+}
+
+img {
+    width:100%;
+}
+
+.col-centered{
+    text-align:center;
+}
+
+.jumbotron {
+    background-color: #dcdcdc;
+    margin-bottom:0;
+}
+
+.navbar{
+    font-size:larger;
+    font-weight:lighter;
+}
+
+.navbar-nav {
+    margin: 12px -10px;
+}
+
+.thumbnail {
+    background-color:rgba(240, 248, 255, 0.00);
+    border:none;
+}
+
+.glyphicon-2x {
+    font-size: 48px;
+}
+
+#cheminement
+{
+    background-color: rgb(193, 191, 191);
+}
+
+#competences
+{
+    background-color: #dcdcdc;
+}
+
+#contact
+{    
+    background-color: #dcdcdc;    
+}
+
+
+
+#contact > div
+{    
+    width:400px;  
+    padding-bottom:50px;
+}
+
+#realisations
+{
+    background-color: rgb(193, 191, 191);
 }
 
 div > h2 {
@@ -8,19 +66,27 @@ div > h2 {
 	padding-bottom: 20px;	
 }
 
+.center {
+padding: 0 0 0 20px;
+}
+
 textarea {
    resize: none;
+   width:350px;
    margin-top:5px;
 }
 
 #btnSendEmail {
 	margin-top:5px;
 	width:100%;
-	background-color:#eee;
-	border-radius:0px;
+	background-color: rgb(193, 191, 191);
+	border-radius:0;
 }
 
 #txtSubject {
 	margin-top:5px;
 }
 
+.content {
+    padding:25px 25px;
+}
